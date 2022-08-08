@@ -1,0 +1,63 @@
+input[placeholder='아이디'] {
+    width: 242px;
+    height: 30px;
+    position: relative;
+    right: 5px;
+}
+
+.SignUpIdBtn{
+    position: relative;
+    width: 68px;
+    height: 30px;
+    font-size:small;
+    bottom: 1px;
+    left: 5px;
+    border-radius: 3px;
+}
+
+.SignUpIdBtn:hover{
+    color: white;
+    background-color:#2e2e2e;
+    border-color: transparent;
+    box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.5);
+    border-radius: 3px;
+}
+
+input[placeholder='비밀번호'] {
+    width: 321px;
+    height: 30px;
+    position: relative;
+}
+
+input[placeholder='비밀번호 확인'] {
+    width: 321px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+}
+
+input[placeholder='이름'] {
+    width: 321px;
+    height: 30px;
+    position: relative;
+}
+
+input[placeholder='이메일 인증'] {
+    width: 321px;
+    height: 30px;
+    position: relative;
+}
+
+.SignUpBtn{
+    position: relative;
+    top: 20px;
+    border-radius: 3px;
+}
+
+.SignUpBtn:hover{
+    color: white;
+    background-color:#2e2e2e;
+    border-color: transparent;
+    box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.5);
+    border-radius: 3px;
+}

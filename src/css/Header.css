@@ -1,0 +1,65 @@
+.HeaderDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.HeaderLogo{
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 70px;
+}
+
+.HeaderBtn{
+    color: black;
+    font-size: medium;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    margin: 10px;
+}
+
+input[placeholder='검색어를 입력하세요 .'] {
+    border-radius: 50px;
+    height: 35px;
+    width: 300px;
+    font-size: 13px;
+    border: 0;
+    outline: 0;
+    position: relative;
+    left: 10px;
+}
+
+.HeaderLoginBtn{
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    color: gray;
+}
+
+.HeaderTopBar{
+    display: flex;
+    position: relative;
+    top: 40px;
+    height: 50px;
+    left: 20px;
+}
+
+.HeaderSearch{
+    border: 3px solid black;
+    width: 350px;
+    height: 45px;
+    border-radius: 30px;
+    
+}
+
+.HeaderSearchIcon{
+    position: relative;
+    left: 10px;
+}
+
+.HeaderLoginAndSignUp{
+    position: relative;
+    left: 400px;
+}
