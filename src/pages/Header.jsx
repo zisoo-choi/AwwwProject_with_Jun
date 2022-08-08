@@ -2,8 +2,16 @@ import React from 'react';
 import '../css/Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {useNavigate} from 'react-router-dom';
 
-const header = () => {
+const Header = () => {
+    const navigate= useNavigate();
+    const goLogin=() =>{
+        navigate("/Login");
+    };
+    const goHome=() =>{
+        navigate("/SignUp");
+    };
     return (
         <>
             <div className ="container show-fl">
@@ -25,8 +33,8 @@ const header = () => {
                                 </div>
                             
                                 <div className='HeaderLoginAndSignUp'>
-                                    <button className='HeaderBtn HeaderLoginBtn' type="button">Login</button>
-                                    <button className='HeaderBtn HeaderLoginBtn' type="button">SignUp</button>
+                                    <button className='HeaderBtn HeaderLoginBtn' type="button" onClick={goLogin}>Login</button>
+                                    <button className='HeaderBtn HeaderLoginBtn' type="button" onClick={goHome}>SignUp</button>
                                 </div>
                             </div>
                         </div>
@@ -38,4 +46,4 @@ const header = () => {
     );
 };
 
-export default header;
+export default Header;

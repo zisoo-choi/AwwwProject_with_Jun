@@ -15,7 +15,7 @@ import {
     SignUpName,
     SignUpEmail,
     LoginFullBox,
-    HeaderAwwwLogo
+  
 } from '../styledComponent';
 
 function SignUp() {
@@ -25,9 +25,7 @@ function SignUp() {
     };
     return (
         <>
-        <HeaderAwwwLogo onClick={goHome} > <strong>Aw</strong>
-            
-        </HeaderAwwwLogo> 
+    
         <AllBox2>
             <LoginFullBox>
                 <SignUpHeaderName>Sign Up</SignUpHeaderName>
