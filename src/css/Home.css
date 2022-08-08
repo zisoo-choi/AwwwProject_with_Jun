@@ -1,0 +1,33 @@
+.RankHeaderLogoBar{
+    display:flex;
+    justify-content: space-around;
+}
+
+.Album{
+ margin-left: 220px;
+}
+
+.Like{
+    margin-left: 150px;
+}       
+
+.Litening{
+    margin-left: 90px;
+}
+
+.Add{
+    margin-left: 50px;
+}
+
+.Download{
+    margin-left: 50px;
+}
+
+.MusicVideo{
+    margin-left: 50px;
+} 
+
+.SongTitle{
+    margin-left: 150px;
+}                  
+                    
