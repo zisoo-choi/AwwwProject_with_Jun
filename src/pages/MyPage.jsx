@@ -13,32 +13,35 @@ const MyPage = () => {
                     <div className='MyPageDiv'>
 
                         <div className='Profile'>
+                        <p className='UserName'>Welcome User !</p>
                             <div className='UserPhoto'></div>
                         </div>
 
                         <div className='PlayListCreateBtn'>
+                            <p className='MyPlayListText'>UserName 님의 PlayList</p>
                             <button type='button' className='WriteBtn2'>
                                 <FontAwesomeIcon icon={faPen} className='WriteIcon'/>
                             </button>
                         </div>
 
                         <div className='MyPlayListDiv'>
+                        
                             <div className='PlayListInBox'>
                                 <div className='PlayListCollection'>
                                     <div className='One'>
-                                        <div className='MyPlayList'></div>
-                                        <div className='MyPlayList'></div>
+                                        <div className='MyPlayList A'></div>
+                                        <div className='MyPlayList B'></div>
                                     </div>
                                     <div className='Two'>
-                                        <div className='MyPlayList'></div>
-                                        <div className='MyPlayList'></div>
+                                        <div className='MyPlayList C'></div>
+                                        <div className='MyPlayList D'></div>
                                     </div>  
                                 </div>
 
                                 <div className='PlayListCollection'></div>
                                 <div className='PlayListCollection'></div>
                                 <div className='PlayListCollection'></div>
-                                
+
                             </div>
                         </div>
                     </div>    
