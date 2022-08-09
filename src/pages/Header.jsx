@@ -7,6 +7,7 @@ import Musictalk from '../Modal/Musictalk';
 
 const Header = () => {
     const navigate= useNavigate();
+
     const goHome=() =>{
         navigate('/')
     };
@@ -20,6 +21,7 @@ const Header = () => {
     const goMusicTalk=() =>{
         navigate("/MusicTalk");
     };
+<<<<<<< HEAD
     const goPlaylist=() =>{
         navigate("/MusicTalk");
     };
@@ -27,6 +29,17 @@ const Header = () => {
         navigate("/temp");
     };
     const[musictalkModal,setMusictalkModal]=useState(false)
+=======
+
+    const goPlayList=() =>{
+        navigate("/PlayList");
+    };
+
+    const goMyPage=() => {
+        navigate("/MyPage");
+    };
+
+>>>>>>> ee51d6372e5c670589ac3df53af6d5f8124fc5ab
     return (
         <>
         <Musictalk show={musictalkModal} onHide={()=>setMusictalkModal(false)}/>
@@ -40,8 +53,13 @@ const Header = () => {
                             <div className='HeaderTopBar'>
                                 <div className='HeaderButtonBar'>
                                     <button className='HeaderBtn' type="button" onClick={goMusicTalk}>Music Talk</button>
+<<<<<<< HEAD
                                     <button className='HeaderBtn' type="button" onClick= {gotemp} >Play List </button>
                                     <button className='HeaderBtn' type="button" onClick={()=>setMusictalkModal(true)}>My Page</button>
+=======
+                                    <button className='HeaderBtn' type="button" onClick={goPlayList} >Play List</button>
+                                    <button className='HeaderBtn' type="button" onClick={goMyPage}>My Page</button>
+>>>>>>> ee51d6372e5c670589ac3df53af6d5f8124fc5ab
                                 </div>
                                 <div className='HeaderSearch'>
                                     <input type="text" placeholder='검색어를 입력하세요 .'></input>

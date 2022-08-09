@@ -1,13 +1,15 @@
 import React from 'react';
 
 
-import { HomeBox1 ,HomePhoto,HomePhoto1,HomePhotoBox,
+import {
+    HomeBox1,
+    HomePhoto,
+    HomePhoto1,
     HomePhoto2,
-    HeaderSearch,
     FullView,
     Header2, 
     LogoDiv2,
-    RankMain,
+   
     HeaderTitle,
     RankPhotoBox,
     RankingNum,
@@ -21,9 +23,10 @@ import { HomeBox1 ,HomePhoto,HomePhoto1,HomePhotoBox,
     RankingAlbum,
     RankLike,
 
-    RankAdd,} from '../styledComponent';
+    RankAdd
+} from '../styledComponent';
 
-    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {
     faHeart,
@@ -50,24 +53,23 @@ const Home = () => {
             <HomeBox1>
                 <HomePhoto1>
                     <img src="/img/태연.jpg" style={img}   /> 
-                    
                 </HomePhoto1>
                
                 <div>
-                <HomePhoto>    
-                    <img src="/img/태연.jpg" style={imgs}  /> 
-                </HomePhoto>
-                <HomePhoto>    
-                    <img src="/img/태연.jpg" style={imgs} /> 
-                </HomePhoto>
-                </div>
-                <div >
-                <HomePhoto2>    
-                    <img src="/img/태연.jpg" style={imgs} /> 
-                </HomePhoto2>
-                <HomePhoto2>    
-                    <img src="/img/태연.jpg" style={imgs} /> 
-                </HomePhoto2>
+                    <HomePhoto>    
+                        <img src="/img/태연.jpg" style={imgs}  /> 
+                    </HomePhoto>
+                    <HomePhoto>    
+                        <img src="/img/태연.jpg" style={imgs} /> 
+                    </HomePhoto>
+                    </div>
+                    <div >
+                    <HomePhoto2>    
+                        <img src="/img/태연.jpg" style={imgs} /> 
+                    </HomePhoto2>
+                    <HomePhoto2>    
+                        <img src="/img/태연.jpg" style={imgs} /> 
+                    </HomePhoto2>
                 </div>
                 
                 

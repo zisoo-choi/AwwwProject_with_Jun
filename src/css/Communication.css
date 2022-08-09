@@ -1,4 +1,4 @@
-hr {
+/*hr {
     width : 40%;
 }
 
@@ -8,4 +8,99 @@ hr {
     position: relative;
     left: 25px;
     top: 5px;
+
+    font-size: 40px;
+    position: relative;
+    left: 40px;
+    font-family: 'Black Han Sans', sans-serif;
+}*/
+
+.MusicTalkTitle{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 60px;
+    color: #2e2e2e;
+    text-shadow: 5px 5px white;
+    margin: 0;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+.MusicTalkDiv{ 
+    height: 100vh;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgba(219, 219, 219, 0.473);
+}
+
+.MusicTalkTextAlign{
+    text-align: center;
+}
+
+.SmallBox{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.QuestionBox{
+    margin: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.UserImg{
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-left: 30px;
+    background-color: white;
+}
+
+/*말풍선 만들어주는*/
+.QuestionTalk {
+	position: relative;
+	background: #F1C164;
+	border-radius: .4em;
+    margin-left: 35px;
+    margin-top: 20px;
+    padding: 15px;
+}
+/*말풍선 만들어주는*/
+.QuestionTalk:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #F1C164;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+
+.WriteBtn{
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: white;
+    color: #F1C164;
+    border: 1px solid white;
+}
+
+.WriteBtn:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+
+    background-color: #F1C164;
+    border: 1px solid #F1C164;
+    color: white;
 }
