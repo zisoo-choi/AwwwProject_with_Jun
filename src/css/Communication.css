@@ -1,20 +1,3 @@
-/*hr {
-    width : 40%;
-}
-
-.hr-dotted {
-    border : 0px;
-    border-top: 5px dotted black;
-    position: relative;
-    left: 25px;
-    top: 5px;
-
-    font-size: 40px;
-    position: relative;
-    left: 40px;
-    font-family: 'Black Han Sans', sans-serif;
-}*/
-
 .MusicTalkTitle{
     font-family: 'Black Han Sans', sans-serif;
     font-size: 60px;
@@ -29,7 +12,7 @@
 .MusicTalkDiv{ 
     height: 100vh;
     padding: 30px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(219, 219, 219, 0.473);
 }
 
@@ -99,7 +82,6 @@
     background-color: black;
     color: white;
     border: 1px solid white;
-
     background-color: #F1C164;
     border: 1px solid #F1C164;
     color: white;

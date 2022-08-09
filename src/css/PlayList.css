@@ -1,0 +1,27 @@
+.PlayListDiv{
+    height: 100vh;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(219, 219, 219, 0.473);
+}
+
+.PlayListBar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.AlbumPhoto{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.PlayListMusicBar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Icon{
+    position: relative;
+    
+}

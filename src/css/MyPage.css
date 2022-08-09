@@ -1,58 +1,78 @@
 .MyPageDiv{
     height: 100vh;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(219, 219, 219, 0.473);
+    position: relative;
+    top:20px;
 }
 
 .Profile{
-    height: 45vh;
-}
-
-.Profile{
+    height: 43vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .UserPhoto{
     width: 230px;
     height: 230px;
-
     border-radius: 50%;
     background-color: white;
 }
 
+.UserName{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-shadow: 3px 3px  white;
+}
+
 .PlayListCreateBtn{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+}
+
+.MyPlayListText{
+    margin-left: 25px;
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+    color: #2e2e2e;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10px;
+    width: 330px;
+    height: 35px;
+    text-align: center;
 }
 
 .WriteBtn2{
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 25px;
     background-color: white;
-    color: orange;
+    color: #F1C164;
     border: 1px solid white;
 }
 
 .WriteBtn2:hover{
-    background-color: orange;
+    background-color: #F1C164;
     color: white;
-    border: 1px solid orange;
+    border: 1px solid #F1C164;
 }
 
 .MyPlayListDiv{
-    height: 48vh;
+    height: 47vh;
 }
 
 .PlayListInBox{
-    height: 42vh;
+    height: 43vh;
     margin: 20px;
     border-radius: 20px;
     background-color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,10 +83,10 @@
     height: 200px;
     width: 200px;
     margin: 20px;
+    
 }
 
 .MyPlayList{
-    border: 1px solid black;
     height: 100px;
     width: 100px;
 }
@@ -75,4 +95,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.A{
+    background-color: pink;
+}
+
+.B{
+    background-color: gray;
+}
+
+.C{
+    background-color: blueviolet;
+}
+
+.D{
+    background-color: palegoldenrod;
 }
