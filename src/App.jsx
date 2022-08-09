@@ -22,10 +22,7 @@ const App = () => {
         <Route path='/'  exact element={<Home/>}></Route>
         <Route path='/MusicTalk'  element={<Communication/>}></Route>
         
-<<<<<<< HEAD
-=======
 
->>>>>>> b6c34711f5ecf6c411530fbe60443a1f1a59192b
         <Route path='/PlayList'  element={<PlayList/>}></Route>
         <Route path='/MyPage'  element={<MyPage/>}></Route>
 
