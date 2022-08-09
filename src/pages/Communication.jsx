@@ -1,7 +1,8 @@
-import React from 'react';
+import React ,{useState}from 'react';
 //import {useNavigate} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
+import MusicTalkModal from '../Modal/MusicTalkModal';
 
 import '../css/Communication.css';
 
@@ -14,9 +15,10 @@ function Communication() {
     const goMoveCommunication=() =>{
         navigate("/MusicTalk1");
     };*/
-
+    const[musictalkModal,setMusictalkModal]=useState(false)
     return (
         <>
+        <MusicTalkModal show={musictalkModal} onHide={()=>setMusictalkModal(false)}/>
         <CommunicationBox>
         <div className ="container show-fl">
                 <div className='row'>
@@ -43,7 +45,7 @@ function Communication() {
                     </div>
 
                     <button type='button' className='WriteBtn'>
-                        <FontAwesomeIcon icon={faPen} className='WriteIcon'/>
+                        <FontAwesomeIcon icon={faPen} onClick={()=>setMusictalkModal(true)} className='WriteIcon'/>
                     </button>
                 </div>
             </div>
