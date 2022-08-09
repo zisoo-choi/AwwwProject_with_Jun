@@ -1,0 +1,71 @@
+.InstaBtn{
+    width: 310px;
+    border-radius: 3px;
+    position: relative;
+    top: 20px;
+}
+
+.AppleBtn{
+    width: 310px;
+    border-radius: 3px;
+    position: relative;
+    top: 40px;
+}
+
+.TwitterBtn{
+    width: 310px;
+    border-radius: 3px;
+    position: relative;
+    top: 60px;
+}
+
+.InstaBtn:hover{
+    color: yellow;
+    background-color:#2e2e2e;
+    border-color: transparent;
+    box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.5);
+    border-radius: 3px;
+}
+
+.AppleBtn:hover{
+    color: red;
+    background-color:#2e2e2e;
+    border-color: transparent;
+    box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.5);
+    border-radius: 3px;
+}
+
+.TwitterBtn:hover{
+    color: skyblue;
+    background-color:#2e2e2e;
+    border-color: transparent;
+    box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.5);
+    border-radius: 3px;
+}
+
+input[placeholder='ID'] {
+    width: 310px;
+    height: 30px;
+    position: relative;
+    top: 15px;
+}
+
+input[placeholder='PW'] {
+    width: 310px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+}
+
+.LoginBtn{
+    width: 310px;
+    border-radius: 3px;
+}
+
+.LoginBtn:hover{
+    color: white;
+    background-color:#2e2e2e;
+    border-color: transparent;
+    box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.5);
+    border-radius: 3px;
+}

@@ -1,0 +1,15 @@
+.FooterDiv{
+    text-align: center;
+    color: gray;
+    font-weight: 800;
+}
+
+.FooterBigText{
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+}
+
+.FooterSmallText{
+    font-size: 13px;
+}
