@@ -1,5 +1,6 @@
 import React from 'react';
-import '../css/Home.css'
+
+
 import { HomeBox1 ,HomePhoto,HomePhoto1,HomePhotoBox,
     HomePhoto2,
     HeaderSearch,
@@ -19,7 +20,9 @@ import { HomeBox1 ,HomePhoto,HomePhoto1,HomePhotoBox,
     RankingBox,
     RankingAlbum,
     RankLike,
+
     RankAdd,} from '../styledComponent';
+
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {

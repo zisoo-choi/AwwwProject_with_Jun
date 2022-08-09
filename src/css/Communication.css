@@ -1,0 +1,11 @@
+hr {
+    width : 40%;
+}
+
+.hr-dotted {
+    border : 0px;
+    border-top: 5px dotted black;
+    position: relative;
+    left: 25px;
+    top: 5px;
+}
