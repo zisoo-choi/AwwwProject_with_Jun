@@ -21,7 +21,7 @@ import { HomeBox1 ,HomePhoto,HomePhoto1,HomePhotoBox,
     RankingAlbum,
     RankLike,
 
-    RankAdd,} from '../StyledComponent';
+    RankAdd,} from '../styledComponent';
 
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

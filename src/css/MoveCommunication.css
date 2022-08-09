@@ -1,0 +1,14 @@
+.hr-solid {
+    border : 0px;
+    border-top: 5px solid #663399;
+    position: relative;
+    top: 5px;
+    width: 500px;
+}
+
+.CommunicationAnswer{
+    position: relative;
+    left: 10px;
+    width: 380px;
+    height: 150px;
+}

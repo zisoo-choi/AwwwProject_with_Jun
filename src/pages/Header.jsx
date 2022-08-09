@@ -6,11 +6,18 @@ import {useNavigate} from 'react-router-dom';
 
 const Header = () => {
     const navigate= useNavigate();
+    const goHome=() =>{
+        navigate('/')
+    };
     const goLogin=() =>{
         navigate("/Login");
     };
-    const goHome=() =>{
+    const goSiginUp=() =>{
         navigate("/SignUp");
+    };
+    
+    const goMusicTalk=() =>{
+        navigate("/MusicTalk");
     };
     return (
         <>
@@ -19,11 +26,11 @@ const Header = () => {
                     <div className='col-lg-12 ,col-md-12, col-sm-12, col-xs-auto'>
 
                         <div className='HeaderDiv' >
-                            <div className='HeaderLogo'>Aw</div>
+                            <div className='HeaderLogo' onClick={goHome}>Aw</div>
                             
                             <div className='HeaderTopBar'>
                                 <div className='HeaderButtonBar'>
-                                    <button className='HeaderBtn' type="button">Music Talk</button>
+                                    <button className='HeaderBtn' type="button" onClick={goMusicTalk}>Music Talk</button>
                                     <button className='HeaderBtn' type="button">Play List</button>
                                     <button className='HeaderBtn' type="button">My Page</button>
                                 </div>
@@ -34,7 +41,7 @@ const Header = () => {
                             
                                 <div className='HeaderLoginAndSignUp'>
                                     <button className='HeaderBtn HeaderLoginBtn' type="button" onClick={goLogin}>Login</button>
-                                    <button className='HeaderBtn HeaderLoginBtn' type="button" onClick={goHome}>SignUp</button>
+                                    <button className='HeaderBtn HeaderLoginBtn' type="button" onClick={goSiginUp}>SignUp</button>
                                 </div>
                             </div>
                         </div>

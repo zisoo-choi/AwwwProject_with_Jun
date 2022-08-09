@@ -301,3 +301,86 @@ export const Header2 = styled.div`
     position: relative;
     top: 20px;
 `
+
+
+///뮤직토크
+
+export const MoveCommunicationBox = styled.div`
+    margin: 20px;
+`
+
+export const MoveCommunicationHeader = styled.div`
+    display: flex;
+`
+
+export const QuestionTextDiv = styled.div`
+    display: flex;
+    margin: 20px;
+`
+
+export const CommunicationQuestion = styled.div`
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    top: 8px;
+`
+
+export const AnswerTextDiv = styled.div`
+    display: flex;
+    margin: 20px;
+`
+export const Q= styled.div`
+    font-size: 30px;
+    font-family: 'Black Han Sans', sans-serif;
+`
+export const  CommunicationMain= styled.div`
+    border: 1px solid black;
+    padding: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+export const  CommunicationSubTitle= styled.h3`
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    top: 23px;
+    left: 10px;
+`
+export const  CommunicationTitle= styled.h1`
+    font-weight: 600;
+    font-size: 45px;
+`
+export const  CommunicationBox= styled.div`
+    padding: 20px;
+`
+export const ReplCnt = styled.div`
+    position:relative;
+    left: 35px;
+    top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+`
+export const QuestionTitle = styled.div`
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    left: 10px;
+`
+export const QuestionDiv= styled.div`
+    display: flex;
+    padding: 10px;
+    width: 700px;
+    height: 100px;
+`
+export const HeaderLogo = styled.div`
+    font-size: 40px;
+    cursor: pointer;
+    display:flex;
+`
+export const  CommunicationHeader= styled.div`
+    display: flex;
+`
