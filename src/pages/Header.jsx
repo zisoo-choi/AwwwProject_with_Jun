@@ -3,7 +3,7 @@ import '../css/Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from 'react-router-dom';
-import MusicTalkModal from '../Modal/MusicTalkModal';
+
 
 const Header = () => {
     const navigate= useNavigate();
@@ -20,13 +20,20 @@ const Header = () => {
     const goMusicTalk=() =>{
         navigate("/MusicTalk");
     };
+    const goPlayList=() =>{
+        navigate("/PlayList");
+    };
+
+    const goMyPage=() => {
+        navigate("/MyPage");
+    };
 
     
    
-    const[musictalkModal,setMusictalkModal]=useState(false)
+   
     return (
         <>
-        <MusicTalkModal show={musictalkModal} onHide={()=>setMusictalkModal(false)}/>
+        
             <div className ="container show-fl">
                 <div className='row'>
                     <div className='col-lg-12 ,col-md-12, col-sm-12, col-xs-auto'>
@@ -37,8 +44,8 @@ const Header = () => {
                             <div className='HeaderTopBar'>
                                 <div className='HeaderButtonBar'>
                                     <button className='HeaderBtn' type="button" onClick={goMusicTalk}>Music Talk</button>
-                                    <button className='HeaderBtn' type="button"  >Play List </button>
-                                    <button className='HeaderBtn' type="button" >My Page</button>
+                                    <button className='HeaderBtn' type="button" onClick={goPlayList} >Play List</button>
+                                    <button className='HeaderBtn' type="button" onClick={goMyPage}>My Page</button>
                                 </div>
                                 <div className='HeaderSearch'>
                                     <input type="text" placeholder='검색어를 입력하세요 .'></input>
