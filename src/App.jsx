@@ -12,6 +12,7 @@ import Communication from './pages/Communication';
 
 
 
+
 const App = () => {
   return (
     <div>
@@ -22,7 +23,7 @@ const App = () => {
         <Route path='/'  exact element={<Home/>}></Route>
         <Route path='/MusicTalk'  element={<Communication/>}></Route>
         <Route path='/MusicTalk1'  element={<MusicTalk/>}></Route>
-    
+        
         <Route path='/Login' element={<Login/>}> </Route>
         <Route path='/SignUp' element={<SignUp/>}> </Route>
       </Routes>
