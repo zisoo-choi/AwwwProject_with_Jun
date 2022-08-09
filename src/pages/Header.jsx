@@ -6,6 +6,7 @@ import {useNavigate} from 'react-router-dom';
 
 const Header = () => {
     const navigate= useNavigate();
+
     const goHome=() =>{
         navigate('/')
     };
@@ -19,6 +20,15 @@ const Header = () => {
     const goMusicTalk=() =>{
         navigate("/MusicTalk");
     };
+
+    const goPlayList=() =>{
+        navigate("/PlayList");
+    };
+
+    const goMyPage=() => {
+        navigate("/MyPage");
+    };
+
     return (
         <>
             <div className ="container show-fl">
@@ -31,8 +41,8 @@ const Header = () => {
                             <div className='HeaderTopBar'>
                                 <div className='HeaderButtonBar'>
                                     <button className='HeaderBtn' type="button" onClick={goMusicTalk}>Music Talk</button>
-                                    <button className='HeaderBtn' type="button">Play List</button>
-                                    <button className='HeaderBtn' type="button">My Page</button>
+                                    <button className='HeaderBtn' type="button" onClick={goPlayList} >Play List</button>
+                                    <button className='HeaderBtn' type="button" onClick={goMyPage}>My Page</button>
                                 </div>
                                 <div className='HeaderSearch'>
                                     <input type="text" placeholder='검색어를 입력하세요 .'></input>

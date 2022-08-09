@@ -3,17 +3,15 @@ import '../css/MoveCommunication.css';
 import '../css/Communication.css';
 
 import {
-    CommunicationTitle,
-    CommunicationSubTitle,
+    
     CommunicationMain,
     Q,
     MoveCommunicationBox,
-    MoveCommunicationHeader,
+    
     QuestionTextDiv,
     CommunicationQuestion,
     AnswerTextDiv,
 } from '../styledComponent';
-
 
 
 
