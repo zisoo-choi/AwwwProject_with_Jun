@@ -24,7 +24,7 @@
 input[placeholder='검색어를 입력하세요 .'] {
     border-radius: 50px;
     height: 35px;
-    width: 300px;
+    width: 85%;
     font-size: 13px;
     border: 0;
     outline: 0;

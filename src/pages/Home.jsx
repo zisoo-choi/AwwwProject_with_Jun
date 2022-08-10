@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Home.css'
 
 
 import {
@@ -21,7 +22,8 @@ import {
     RankingBox,
     RankingAlbum,
     RankLike,
-    RankAdd
+    RankAdd,
+
 } from '../styledComponent';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -37,11 +39,11 @@ import {
 const Home = () => {
     const img={
         height: "40vh",  
-        width: "20vw",
+        width: "100%",
     }
     const imgs={
         height: "25vh",  
-        width: "10vw",
+        width: "100%",
     }
     return (
         <>

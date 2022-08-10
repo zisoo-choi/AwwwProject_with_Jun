@@ -1,58 +1,145 @@
-import React from 'react';
+import React ,{useState}from 'react';
 
 import '../css/PlayList.css';
+import {
+    
+    FullView,
+    Header2, 
+    LogoDiv2,
+    HeaderTitle,
+    RankPhotoBox,
+    RankingNum,
+    MusicRank,
+    MusicPhotoRank,
+    RankRepl,
+    MusicMainNameRank,
+    MusicSubNameRank,
+    RankTitle,
+    RankingBox,
+    RankingAlbum,
+    RankLike,
+    RankAdd,
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+} from '../styledComponent';
+import '../css/Communication.css';
+import MusicTalkModal from '../Modal/MusicTalkModal';
+import { FontAwesomeIcon,} from '@fortawesome/react-fontawesome'
 import {
     faHeart,
     faPlay,
     faPlus,
     faDownload,
     faVideo,
+    faPen
+    
 } from '@fortawesome/free-solid-svg-icons';
 
 const PlayList = () => {
-
+    const[musictalkModal,setMusictalkModal]=useState(false)
     return (
         <>
+<MusicTalkModal show={musictalkModal} onHide={()=>setMusictalkModal(false)}/>
         <div className ="container show-fl">
                 <div className='row'>
                     <div className='col-lg-12 ,col-md-12, col-sm-12, col-xs-auto'>
-
-                        <div className='PlayListDiv'>
-                            <p className='PlayListMainTitle'>Awww PlayList</p>
-                            <div className='PlayListBar'>
-                                <input type='checkbox' />
-                                <p className='Rank'>순위</p>
-                                <p className='Album'>곡/앨범</p>
-                                <p className='Title'>제목</p>
-                                <p className='Artist'>아티스트</p>
-                                <p className='Listen'>듣기</p>
-                                <p className='PlayLi'>재생목록</p>
-                                <p className='MyLi'>내 리스트</p>
-                                <p className='Like'>좋아요</p>
-                            </div>
-
-                            <div className='PlayListMusicBar'>
-                                <input type='checkbox' />
-                                <p>1</p>
-                                <div className='AlbumPhoto'></div>
-                                <div className='AlbumTitle'>
-                                    <p className='AlbumBigTitle'>Big TItle</p>
-                                    <p className='AlbumSmallTitle'>sub title</p>
+                    <FullView>
+                        <Header2>
+                            <LogoDiv2>
+                                <div >
+                                    <HeaderTitle>play list</HeaderTitle>
                                 </div>
-                                <div className='ArtistName'>Name</div>
-                                
-                                    <FontAwesomeIcon icon={faPlay} />
-                                    <FontAwesomeIcon icon={faPlus} />
-                                    <FontAwesomeIcon icon={faDownload} />
-                                    <FontAwesomeIcon icon={faVideo} />
-                                
+                            </LogoDiv2>
+                        </Header2>
+
+                        <RankTitle>
+                            <RankingBox/>
+                            <span>순위</span>
+                            <span className='SongTitle'>곡정보</span>
+                            <span className='Album'>앨범</span>
+                            <span className='Like'>좋아요</span>
+                            <span className='Litening'>듣기</span>
+                            <span className='Add'>담기</span>
+                            <span className='Download'>다운</span>
+                            <span className='MusicVideo'>뮤비</span>
+                        </RankTitle>
+
+                        <div>
+                            <div>
+                                <MusicRank>
+                                    <RankPhotoBox>
+                                        <RankingBox/>
+                                        <RankingNum>1</RankingNum>
+                                        <MusicPhotoRank />
+                                            <div>
+                                                <MusicMainNameRank>Music Title</MusicMainNameRank>
+                                                <MusicSubNameRank>Music Sub Title</MusicSubNameRank>    
+                                            </div>
+                                    </RankPhotoBox>
+
+                                    <RankingAlbum>홍길동 1집</RankingAlbum>
+
+                                    <RankRepl>
+                                        <FontAwesomeIcon icon={faHeart} />
+                                            999
+                                    </RankRepl>
+
+                                    <RankLike>
+                                        <FontAwesomeIcon icon={faPlay} />
+                                    </RankLike>
+                                    <RankAdd>
+                                        <FontAwesomeIcon icon={faPlus} />
+                                    </RankAdd>
+                                    <RankAdd>
+                                        <FontAwesomeIcon icon={faDownload} />
+                                    </RankAdd>
+                                    <RankAdd>
+                                        <FontAwesomeIcon icon={faVideo} />
+                                    </RankAdd>
+                                </MusicRank>
                             </div>
+                            
+                            <div>
+                                <MusicRank>
+                                    <RankPhotoBox>
+                                        <RankingBox/>
+                                        <RankingNum>2</RankingNum>
+                                        <MusicPhotoRank />
+                                        <div>
+                                            <MusicMainNameRank>Music Title</MusicMainNameRank>
+                                            <MusicSubNameRank>Music Sub Title</MusicSubNameRank>
+                                        </div>
+                                    </RankPhotoBox>
+                                    
+                                    <RankingAlbum>홍길동 1집</RankingAlbum>
+                                    <RankRepl>
+                                        <FontAwesomeIcon icon={faHeart} />
+                                            999
+                                    </RankRepl>
+                                    
+                                    <RankLike>
+                                        <FontAwesomeIcon icon={faPlay} />
+                                    </RankLike>
+                                    <RankAdd>
+                                        <FontAwesomeIcon icon={faPlus} />
+                                    </RankAdd>
+                                    <RankAdd>
+                                        <FontAwesomeIcon icon={faDownload}   />
+                                    </RankAdd>
+                                    <RankAdd>
+                                        <FontAwesomeIcon icon={faVideo}   />
+                                    </RankAdd>
+                                </MusicRank>
+                            </div>
+                        </div>
+                        <button type='button' className='WriteBtn'>
+                        <FontAwesomeIcon icon={faPen} onClick={()=>setMusictalkModal(true)} className='WriteIcon'/>
+                    </button>
+                </FullView>
+                       
 
 
                             
-                        </div>
+                        
 
                     </div>
                 </div>
