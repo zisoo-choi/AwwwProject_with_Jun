@@ -7,6 +7,7 @@
     position: relative;
     left: 40px;
     top: 10px;
+    cursor: pointer;
 }
 
 .MusicTalkDiv{ 
@@ -24,6 +25,7 @@
     background-color: white;
     border: 1px solid white;
     border-radius: 50px;
+    height: 75vh;
 }
 
 .QuestionBox{
@@ -51,6 +53,7 @@
     margin-left: 35px;
     margin-top: 20px;
     padding: 15px;
+    cursor: pointer;
 }
 /*말풍선 만들어주는*/
 .QuestionTalk:after {

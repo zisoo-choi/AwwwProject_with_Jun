@@ -1,0 +1,49 @@
+.AnswerTitle{
+ text-align:left;
+ padding-left: 50px;
+ padding-top: 15px;
+ padding-right: 50px;
+ 
+}
+.AnswerIcon{
+    display: flex;
+   
+}
+.Comment{
+    padding-left: 10px;
+}
+.AnswerCenter{
+    text-align: center;
+    align-items: center;
+    padding-top: 3px;
+    border:1px solid black;
+    width: 95%;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+input[placeholder='댓글을 입력하세요' ] {
+    border: 0px solid;
+    width: 95%;
+    height: 10vh;
+    background-color: antiquewhite;
+    
+    
+    
+}
+
+.AnswerBar{
+    position: relative;
+    top: 219px;
+   
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input:focus {outline:none;}
+.Fly{
+    cursor: pointer;
+
+}
