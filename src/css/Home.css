@@ -3,31 +3,45 @@
     justify-content: space-around;
 }
 
-.Album{
- margin-left: 220px;
-}
 
-.Like{
-    margin-left: 150px;
-}       
-
-.Litening{
-    margin-left: 90px;
-}
-
-.Add{
-    margin-left: 50px;
-}
-
-.Download{
-    margin-left: 50px;
-}
-
-.MusicVideo{
-    margin-left: 50px;
-} 
 
 .SongTitle{
     margin-left: 150px;
 }                  
 
+.HomeInBox{
+    height: 50vh;
+    
+    border-radius: 20px;
+    background-color: rgba(219, 219, 219, 0.473);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MusicRank{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.RankTitle{
+    display: flex;
+    justify-content: space-evenly;
+
+    border: 1px solid black;
+}
+
+.RankBox{
+    border: 1px solid black;
+}
+
+.MusicRank{
+    display: flex;
+    align-items: center;
+}
+
+.PhotoDiv{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}

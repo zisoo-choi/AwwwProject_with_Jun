@@ -38,25 +38,30 @@ const Header = () => {
                 <div className='row'>
                     <div className='col-lg-12 ,col-md-12, col-sm-12, col-xs-auto'>
 
-                        <div className='HeaderDiv' >
-                            <div className='HeaderLogo' onClick={goHome}>Aw</div>
-                            
-                            <div className='HeaderTopBar'>
-                                <div className='HeaderButtonBar'>
-                                    <button className='HeaderBtn' type="button" onClick={goMusicTalk}>Music Talk</button>
-                                    <button className='HeaderBtn' type="button" onClick={goPlayList} >Play List</button>
-                                    <button className='HeaderBtn' type="button" onClick={goMyPage}>My Page</button>
-                                </div>
-                                <div className='HeaderSearch'>
-                                    <input type="text" placeholder='검색어를 입력하세요 .'></input>
-                                    <FontAwesomeIcon icon={faMagnifyingGlass} className='HeaderSearchIcon'/>
-                                </div>
-                            
-                                <div className='HeaderLoginAndSignUp'>
-                                    <button className='HeaderBtn HeaderLoginBtn' type="button" onClick={goLogin}>Login</button>
-                                    <button className='HeaderBtn HeaderLoginBtn' type="button" onClick={goSiginUp}>SignUp</button>
+                        <div className='HeaderDiv'>
+                            <div className='HeaderLogoAndSearch'>
+                                <div className='HeaderLogo' onClick={goHome}>Aw</div>
+                                
+                                <div className='HeaderTopBar'>
+                                    <div className='HeaderThreeBtn'>
+                                        <button className='HeaderBtn MusicTalkBtn' type="button" onClick={goMusicTalk}><pre>Music Talk</pre></button>
+                                        <button className='HeaderBtn PlayListBtn' type="button" onClick={goPlayList}><pre>Play List</pre></button>
+                                        <button className='HeaderBtn MyPageBtn' type="button" onClick={goMyPage}><pre>My Page</pre></button>
+                                    </div>
+                                    <div className='HeaderSearch'>
+                                        <input type="text" placeholder='검색어를 입력하세요.'></input>
+                                        <button type='button' className='SearchBarBtn'>
+                                            <FontAwesomeIcon icon={faMagnifyingGlass} className='HeaderSearchIcon'/>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div className='HeaderLoginAndSighUpBtn'>
+                                <button className='HeaderLoginBtn' type="button" onClick={goLogin}>Login</button>
+                                <button className='HeaderLoginBtn' type="button" onClick={goSiginUp}>SignUp</button>
+                            </div>
+                            
                         </div>
 
                     </div>

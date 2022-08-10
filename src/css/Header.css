@@ -1,8 +1,6 @@
 .HeaderDiv{
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .HeaderLogo{
@@ -15,52 +13,88 @@
 .HeaderBtn{
     color: black;
     font-size: medium;
-    background-color: white;
+    background: none;
     border: 0;
     outline: 0;
-    margin: 10px;
+    
+   
 }
 
-input[placeholder='검색어를 입력하세요 .'] {
+input[placeholder='검색어를 입력하세요.'] {
     border-radius: 50px;
     height: 35px;
-    width: 85%;
+    width: 80%;
     font-size: 13px;
     border: 0;
     outline: 0;
     position: relative;
     left: 10px;
+    
 }
 
 .HeaderLoginBtn{
     width: 70px;
-    height: 30px;
+    height: 30%;
     border-radius: 30px;
     color: gray;
+    
+    font-size: medium;
+    background: none;
+    border: 0;
+    outline: 0;
+
+    position: relative;
+    top: 10px;
+}
+
+.MusicTalkBtn, .PlayListBtn, .MyPageBtn{
+    width: 90%;
+    
 }
 
 .HeaderTopBar{
     display: flex;
     position: relative;
-    top: 40px;
-    height: 50px;
+    top: 30px;
+    height: 50%;
+    width: 300%;
     left: 20px;
-}
-
-.HeaderSearch{
-    border: 3px solid black;
-    width: 350px;
-    height: 45px;
-    border-radius: 30px;
+    
+    
     
 }
 
-.HeaderSearchIcon{
-    position: relative;
-    left: 10px;
+.HeaderSearch{
+    display: flex;
+    border: 3px solid black;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    width: 200%;
+    justify-content: space-between;
+    
+
 }
 
-.HeaderLoginAndSignUp{
-    position: relative;
-    left: 350px;
+.HeaderThreeBtn{
+    display: flex;
+    width: 200%;
+}
+
+.SearchBarBtn{
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background: none;
+}
+
+
+.HeaderLogoAndSearch{
+   display: flex;
+}
+
+.HeaderLoginAndSighUpBtn{
+    display: flex;
+    align-items: center;
+    
 }
