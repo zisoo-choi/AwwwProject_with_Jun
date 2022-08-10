@@ -1,8 +1,8 @@
-import React ,{useState}from 'react';
+import React ,{useState}from 'react'; //
 import {Routes,Route, useNavigate} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
-import MusicTalkModal from '../Modal/MusicTalkModal';
+import MusicTalkModal from '../Modal/MusicTalkModal'; // 
 
 import '../css/Communication.css';
 import Answer from './Answer';
@@ -16,14 +16,14 @@ function Communication() {
     const goAnswer=() =>{
         navigate("/Answer");
     };
-    const[musictalkModal,setMusictalkModal]=useState(false)
+    const[musictalkModal,setMusictalkModal]=useState(false) //
     return (
         <>
         <Routes>
          <Route path='/Answer' exact element={<Answer/>}></Route>
          </Routes>
 
-        <MusicTalkModal show={musictalkModal} onHide={()=>setMusictalkModal(false)}/>
+        <MusicTalkModal show={musictalkModal} onHide={()=>setMusictalkModal(false)}/> 
         <CommunicationBox>
         <div className ="container show-fl">
                 <div className='row'>

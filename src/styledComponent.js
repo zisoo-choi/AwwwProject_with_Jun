@@ -288,6 +288,7 @@ export const FullView = styled.div`
     position: relative;
     top: 10px;
     padding: 10px;
+    
 `
 export const HeaderTitle = styled.p`
     font-size: 38px;

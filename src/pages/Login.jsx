@@ -33,7 +33,7 @@ function Login() {
     return (
         <>
             
-
+            <div className='LoginFullBox'>
             <AllBox>
                 <LoginFullBox>
                     <LoginName>Login</LoginName>
@@ -77,6 +77,7 @@ function Login() {
                     </LinkText>
                 </LoginFullBox>
             </AllBox>
+            </div>
         </>
     );
 };

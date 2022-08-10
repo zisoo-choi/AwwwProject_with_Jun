@@ -109,52 +109,390 @@ const Home = () => {
                     
                     
           
+          <FullView>
+                    <div className='HeaderTitleTopTen'>TOP100</div>
 
-                    <FullView>
-                        <Header2>
-                            <LogoDiv2>
-                                <div >
-                                    <HeaderTitle>TOP10</HeaderTitle>
-                                </div>
-                            </LogoDiv2>
-                        </Header2>
-
-                        <div className='RankTitle'>
-                            <div>순위</div>
-                            <div className='SongTitle'>곡정보</div>
-                            <div className='Album'>앨범</div>
-                            <div className='Like'>좋아요</div>
-                            <div className='Litening'>듣기</div>
-                            <div className='Add'>담기</div>
-                            <div className='Download'>다운</div>
-                            <div className='MusicVideo'>뮤비</div>
-                        </div>
-
-
-                        <div className='RankBox'>
-                            <div className='OneMusic'>
-                                <div className='MusicRank'>
-
-                                    <input type='checkbox'></input>
-                                    <RankingNum>1</RankingNum>
-                                    <div className='PhotoDiv'></div>
-                                    <div className='TopTenTitle'>
-                                        <MusicMainNameRank>Music Title</MusicMainNameRank>
-                                        <MusicSubNameRank>Music Sub Title</MusicSubNameRank>    
-                                    </div>
-                                    <RankingAlbum>홍길동 1집</RankingAlbum>
-                                    <FontAwesomeIcon icon={faHeart} />
-                                    <FontAwesomeIcon icon={faPlay} />
-                                    <FontAwesomeIcon icon={faPlus} />
-                                    <FontAwesomeIcon icon={faDownload} />
-                                    <FontAwesomeIcon icon={faVideo} />
+                                <div className='RankTitle'>
+                                    <input type='checkbox' className='RankFirstCheckBox'></input>
+                                    <div className='Ranking'>순위</div>
+                                    <div className='SongTitle'>곡정보</div>
+                                    <div className='Album'>앨범</div>
+                                    <div className='Like'>좋아요</div>
+                                    <div className='Litening'>듣기</div>
+                                    <div className='Add'>담기</div>
+                                    <div className='Download'>다운</div>
+                                    <div className='MusicVideo'>뮤비</div>
                                     
                                 </div>
-                            </div>
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum OneTitle'>1</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum OneTitle'>2</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum OneTitle'>3</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum OneTitle'>4</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum OneTitle'>5</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum OneTitle'>6</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum OneTitle'>7</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum OneTitle'>8</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum OneTitle'>9</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                                <div className='RankBox'>
+                                    <div className='MusicRank'>
+                                        <input type='checkbox'></input>
+                                        <div className='RankingNum TwoTitle'>10</div>
+                                        <div className='PhotoAndTitle'>
+                                            <div className='PhotoDiv'></div>
+                                            <div className='TopTenTitle'>
+                                                <div className ='MusicMainNameRank'>Music Title</div>
+                                                <div className ='MusicSubNameRank'>Music Sub Title</div>    
+                                            </div>
+                                        </div>
+                                        <div className='RankAlbumName'>홍길동 1집</div>
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faHeart} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlay} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faPlus} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faDownload} />
+                                        </button>
+
+                                        <button type='button' className='PlyBtns'>
+                                            <FontAwesomeIcon className='IconMargin' icon={faVideo} />
+                                        </button>
+                                    </div>
+                                </div>
+
+
                             
-                            
-                        </div>
-                </FullView>
+                            </FullView>
                 </div>
             </div>
         </div>
