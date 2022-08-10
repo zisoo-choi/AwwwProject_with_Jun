@@ -1206,11 +1206,22 @@
     "minimatch" "^3.1.2"
     "strip-json-comments" "^3.1.1"
 
+"@fortawesome/fontawesome-common-types@^0.1.7":
+  "integrity" "sha512-ego8jRVSHfq/iq4KRZJKQeUAdi3ZjGNrqw4oPN3fNdvTBnLCSntwVCnc37bsAJP9UB8MhrTfPnZYxkv2vpS4pg=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.1.7.tgz"
+  "version" "0.1.7"
 
 "@fortawesome/fontawesome-common-types@6.1.2":
   "integrity" "sha512-wBaAPGz1Awxg05e0PBRkDRuTsy4B3dpBm+zreTTyd9TH4uUM27cAL4xWyWR0rLJCrRwzVsQ4hF3FvM6rqydKPA=="
   "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.1.2.tgz"
   "version" "6.1.2"
+
+"@fortawesome/fontawesome-free-regular@^5.0.13":
+  "integrity" "sha512-36lz9Idww1L4QaaTcv7GZiOeIP9emJFDUsedvRovI10kmwyd6rN0PKkIjnq0FB4foLhX4Rou8vnbCCmjtqiLug=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-free-regular/-/fontawesome-free-regular-5.0.13.tgz"
+  "version" "5.0.13"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.1.7"
 
 "@fortawesome/fontawesome-svg-core@^6.1.2", "@fortawesome/fontawesome-svg-core@~1 || ~6":
   "integrity" "sha512-853G/Htp0BOdXnPoeCPTjFrVwyrJHpe8MhjB/DYE9XjwhnNDfuBCd3aKc2YUYbEfHEcBws4UAA0kA9dymZKGjA=="
@@ -1222,6 +1233,13 @@
 "@fortawesome/free-brands-svg-icons@^6.1.2":
   "integrity" "sha512-b2eMfXQBsSxh52pcPtYchURQs6BWNh3zVTG8XH8Lv6V4kDhEg7D0kHN+K1SZniDiPb/e5tBlaygsinMUvetITA=="
   "resolved" "https://registry.npmjs.org/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.1.2.tgz"
+  "version" "6.1.2"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.1.2"
+
+"@fortawesome/free-regular-svg-icons@^6.1.2":
+  "integrity" "sha512-xR4hA+tAwsaTHGfb+25H1gVU/aJ0Rzu+xIUfnyrhaL13yNQ7TWiI2RvzniAaB+VGHDU2a+Pk96Ve+pkN3/+TTQ=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.1.2.tgz"
   "version" "6.1.2"
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.1.2"
@@ -7497,12 +7515,10 @@
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
   "version" "6.0.11"
 
-
 "react-icons@^4.4.0":
   "integrity" "sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg=="
   "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.4.0.tgz"
   "version" "4.4.0"
-
 
 "react-is@^16.13.1", "react-is@^16.3.2", "react-is@^16.7.0", "react-is@>= 16.8.0":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
@@ -7609,10 +7625,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-
-
 "react@*", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.8.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.3", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
-
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
