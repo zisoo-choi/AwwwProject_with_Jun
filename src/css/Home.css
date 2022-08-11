@@ -36,11 +36,7 @@
 
 .PhotoDiv{
     border: 1px solid black;
-<<<<<<< HEAD
-    width: 40px;
-    height: 40px;
-}
-=======
+
     width: 55px;
     height: 50px;
 }
@@ -122,4 +118,4 @@
     border: 0px;
     background: none;
 }
->>>>>>> f4aeda2e30e9af5d36d5c33a04d0ca8597a95261
+
