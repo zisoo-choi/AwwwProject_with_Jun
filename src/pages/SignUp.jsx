@@ -25,7 +25,8 @@ function SignUp() {
     };
     return (
         <>
-    
+
+<div className='SignUpFullBox'>
         <AllBox2>
             <LoginFullBox>
                 <SignUpHeaderName>Sign Up</SignUpHeaderName>
@@ -33,26 +34,26 @@ function SignUp() {
                     <SignUpIdPwEmailTel>
                         <SignUpId>
                             <TextId>아이디</TextId>
-                            <input className='BtnTest' type='text' placeholder='아이디' />
+                            <input className='BtnTest' type='text' placeholder='아이디' required/>
                             <button className='SignUpIdBtn'>중복확인</button>
                         </SignUpId>
 
                         <SignUpPw>
                             <TextPw>비밀번호</TextPw>
                             <div className='PwBox'>
-                                <input type='password' minLength="6" maxLength="15" placeholder='비밀번호' />
-                                <input type='password' minLength="6" maxLength="15" placeholder='비밀번호 확인' />
+                                <input required type='password' minLength="6" maxLength="15" placeholder='비밀번호' />
+                                <input required type='password' minLength="6" maxLength="15" placeholder='비밀번호 확인' />
                             </div>
                         </SignUpPw>
 
                         <SignUpName>
                             <TextName>이름</TextName>
-                            <input type='text' placeholder='이름' />
+                            <input required type='text' placeholder='이름' />
                         </SignUpName>
 
                         <SignUpEmail>
                             <TextEmail>이메일</TextEmail>
-                            <input type='email' placeholder='이메일 인증' />
+                            <input required type='email' placeholder='이메일 인증' />
                         </SignUpEmail>
 
                     </SignUpIdPwEmailTel>
@@ -64,6 +65,7 @@ function SignUp() {
                 </SignUpBox>
             </LoginFullBox>
         </AllBox2>
+        </div>
         </>
     );
 };

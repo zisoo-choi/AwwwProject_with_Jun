@@ -1,3 +1,8 @@
+.LoginFullBox{
+    position: relative;
+    top: 30px;
+}
+
 .InstaBtn{
     width: 310px;
     border-radius: 3px;

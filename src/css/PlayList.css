@@ -25,3 +25,18 @@
     position: relative;
     
 }
+
+.WriteBtn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.PlyBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top:15px;
+}
