@@ -37,8 +37,8 @@ const Header = () => {
             <div className ="container show-fl">
                 <div className='row'>
                     <div className='col-lg-12 ,col-md-12, col-sm-12, col-xs-auto'>
-
                         <div className='HeaderDiv'>
+
                             <div className='HeaderLogoAndSearch'>
                                 <div className='HeaderLogo' onClick={goHome}>Aw</div>
                                 

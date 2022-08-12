@@ -35,7 +35,7 @@ import '../css/MyPage.css';
 import {
     HomeBox1,
     HomePhoto,
-    HomePhoto1,
+   
     HomePhoto2,
     FullView,
     Header2, 
@@ -65,7 +65,7 @@ import {
     faDownload,
     faVideo,
 } from '@fortawesome/free-solid-svg-icons';
-
+import Loding from'./Loding.svg'
 const Home = () => {
     const img={
         height: "40vh",  
@@ -75,13 +75,13 @@ const Home = () => {
         height: "25vh",  
         width: "100%",
     }
+    const Loading=true;
     return (
         <>
         <div className ="container show-fl">
             <div className='row'>
                 <div className='col-lg-12 ,col-md-12, col-sm-12, col-xs-auto'>
-                    
-                <div className='HomePageDiv'>
+               <div className='HomePageDiv'>
                         
                         <div className='HomeInBox'>
                             <div className='PlayListCollection'>
@@ -100,7 +100,8 @@ const Home = () => {
                             <div className='PlayListCollection'></div>
 
                         </div>
-                    </div>
+                    </div> 
+                
 
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import PlayList from './pages/PlayList';
 import MyPage from './pages/MyPage';
-
+import SnsBtn from './pages/SnsBtn'
 import Header from './pages/Header';
 import Footer from './pages/Footer';
 import Home from './pages/Home';
@@ -13,10 +13,12 @@ import Answer from './pages/Answer';
 import Communication from './pages/Communication';
 
 
+const load =false;
+
 const App = () => {
   return (
     <div>
-      <Header/>
+     <Header/>
         
       <Routes>
         <Route path='/'  exact element={<Home/>}></Route>
@@ -27,6 +29,8 @@ const App = () => {
         <Route path='/MyPage'  element={<MyPage/>}></Route>
 
         <Route path='/Login' element={<Login/>}> </Route>
+        <Route path='/SnsBtn' element={<SnsBtn/>}></Route>
+        
         <Route path='/SignUp' element={<SignUp/>}> </Route>
       </Routes>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Outlet} from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
 
 import '../css/Login.css';
@@ -78,6 +78,7 @@ function Login() {
                 </LoginFullBox>
             </AllBox>
             </div>
+            <Outlet/>
         </>
     );
 };

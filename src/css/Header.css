@@ -1,6 +1,13 @@
 .HeaderDiv{
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    @media screen and (max-width: 1000px;) {
+      width: 100%;
+    } 
+    flex-direction: row;
+    width: 90%;
+    
     
 }
 
@@ -93,7 +100,9 @@ input[placeholder='검색어를 입력하세요.'] {
 }
 
 .HeaderLoginAndSighUpBtn{
+    margin: 15px;
+    font-size: 25px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     
 }
