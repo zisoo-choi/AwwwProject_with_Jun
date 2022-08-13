@@ -73,7 +73,7 @@ function Login() {
                                 <LoginBtnBottomBar>
                                     
                                 </LoginBtnBottomBar>
-                            </SnsBox>) :<>"??"</>}
+                            </SnsBox>) :<></>}
                           
                         </SocialLogin>
                     </LoginBox>
