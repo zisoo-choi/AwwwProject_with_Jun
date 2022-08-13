@@ -29,8 +29,11 @@ function Login() {
     const goHome=() =>{
         navigate("/");
     };
+
+    
     
     return (
+
         <>
             
             <div className='LoginFullBox'>
@@ -54,13 +57,14 @@ function Login() {
                             <SocialCheck>
                                 <CheckBar>소셜 로그인</CheckBar>
                                 <input type="checkbox" />
+
                             </SocialCheck>
                             <SnsBox>
                                 <InstaAcnt>
                                     <button onClick={() => window.open('https://www.instagram.com/', '_blank')} className='InstaBtn'>Instargram</button>
                                 </InstaAcnt>
                                 <AppleAcnt>
-                                    <button onClick={() => window.open('https://www.applemusic.co.kr/shop/member.html?type=login', '_blank')} className='AppleBtn'>Apple</button>
+                                    <button onClick={() => window.open('https://www.applemusic.co.kr/shop/member.html?type=login', '_blank')} className='GoogleBtn'>Google</button>
                                 </AppleAcnt>
                                 <TwitterAcnt>
                                     <button onClick={() => window.open('https://twitter.com/?lang=ko', '_blank')} className='TwitterBtn'>Twitter</button>

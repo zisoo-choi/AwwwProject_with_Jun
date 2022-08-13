@@ -31,6 +31,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    left: 200px;
 }
 
 .PlyBtn{
@@ -39,4 +41,17 @@
     align-items: center;
     position:relative;
     top:15px;
+    flex-direction: row;
+}
+
+.PagingNumberDiv{
+    display: flex;
+    
+}
+
+.PreviousPage, .NextPage{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 3px solid #F1C164;
 }

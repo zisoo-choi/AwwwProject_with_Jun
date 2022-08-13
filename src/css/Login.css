@@ -10,7 +10,7 @@
     top: 20px;
 }
 
-.AppleBtn{
+.GoogleBtn{
     width: 310px;
     border-radius: 3px;
     position: relative;
@@ -32,8 +32,8 @@
     border-radius: 3px;
 }
 
-.AppleBtn:hover{
-    color: red;
+.GoogleBtn:hover{
+    color: rgb(0, 225, 0);
     background-color:#2e2e2e;
     border-color: transparent;
     box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.5);
