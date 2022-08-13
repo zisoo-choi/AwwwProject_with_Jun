@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Link, Outlet} from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
+
 
 import '../css/Login.css';
 import{
@@ -29,6 +30,10 @@ function Login() {
     const goHome=() =>{
         navigate("/");
     };
+    const [SnsBtn,setSnsBtn]=useState(false);
+    const toggleBtn=()=>{
+        setSnsBtn((SnsBtn)=>!SnsBtn);
+    }
     
     return (
         <>
@@ -49,13 +54,13 @@ function Login() {
                                 <button className='LoginBtn'>Login</button>
                             </LoginBtnBar>
                         </IdpwBox>
-
-                        <SocialLogin>
-                            <SocialCheck>
+                       
+                        <SocialLogin >
+                             <SocialCheck >
                                 <CheckBar>소셜 로그인</CheckBar>
-                                <input type="checkbox" />
+                                <input type="checkbox" onClick={toggleBtn}/>
                             </SocialCheck>
-                            <SnsBox>
+                            {SnsBtn ? (<SnsBox>
                                 <InstaAcnt>
                                     <button onClick={() => window.open('https://www.instagram.com/', '_blank')} className='InstaBtn'>Instargram</button>
                                 </InstaAcnt>
@@ -68,7 +73,8 @@ function Login() {
                                 <LoginBtnBottomBar>
                                     
                                 </LoginBtnBottomBar>
-                            </SnsBox>
+                            </SnsBox>) :<>"??"</>}
+                          
                         </SocialLogin>
                     </LoginBox>
                     
