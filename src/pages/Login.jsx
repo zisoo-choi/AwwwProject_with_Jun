@@ -1,6 +1,7 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React,{useState} from 'react';
+import {Link, Outlet} from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
+
 
 import '../css/Login.css';
 import{
@@ -29,11 +30,12 @@ function Login() {
     const goHome=() =>{
         navigate("/");
     };
-
-    
+    const [SnsBtn,setSnsBtn]=useState(false);
+    const toggleBtn=()=>{
+        setSnsBtn((SnsBtn)=>!SnsBtn);
+    }
     
     return (
-
         <>
             
             <div className='LoginFullBox'>
@@ -52,19 +54,18 @@ function Login() {
                                 <button className='LoginBtn'>Login</button>
                             </LoginBtnBar>
                         </IdpwBox>
-
-                        <SocialLogin>
-                            <SocialCheck>
+                       
+                        <SocialLogin >
+                             <SocialCheck >
                                 <CheckBar>소셜 로그인</CheckBar>
-                                <input type="checkbox" />
-
+                                <input type="checkbox" onClick={toggleBtn}/>
                             </SocialCheck>
-                            <SnsBox>
+                            {SnsBtn ? (<SnsBox>
                                 <InstaAcnt>
                                     <button onClick={() => window.open('https://www.instagram.com/', '_blank')} className='InstaBtn'>Instargram</button>
                                 </InstaAcnt>
                                 <AppleAcnt>
-                                    <button onClick={() => window.open('https://www.applemusic.co.kr/shop/member.html?type=login', '_blank')} className='GoogleBtn'>Google</button>
+                                    <button onClick={() => window.open('https://www.applemusic.co.kr/shop/member.html?type=login', '_blank')} className='AppleBtn'>Apple</button>
                                 </AppleAcnt>
                                 <TwitterAcnt>
                                     <button onClick={() => window.open('https://twitter.com/?lang=ko', '_blank')} className='TwitterBtn'>Twitter</button>
@@ -72,7 +73,8 @@ function Login() {
                                 <LoginBtnBottomBar>
                                     
                                 </LoginBtnBottomBar>
-                            </SnsBox>
+                            </SnsBox>) :<></>}
+                          
                         </SocialLogin>
                     </LoginBox>
                     
@@ -82,6 +84,7 @@ function Login() {
                 </LoginFullBox>
             </AllBox>
             </div>
+            <Outlet/>
         </>
     );
 };
